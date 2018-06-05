@@ -1,6 +1,7 @@
 #include "defs.hpp"
 
-//#include <tuple/tuple.hpp>
+#include <boost/tuple/tuple.hpp>
+
 
 using namespace ProbabilisticModelling;
 using namespace std;
@@ -18,7 +19,7 @@ int main(int argc, char** argv){
 // std::cout << "PATH=" << getenv("PATH") << std::endl;
   int rows=480;
   int cols=640;
-  int num_pos=100;
+  int num_pos=500;
 
   Vector2iVector pointPositions(num_pos);
 
@@ -32,15 +33,15 @@ int main(int argc, char** argv){
   shown_image=cv::Vec3b(255,0,0);
 //
   cv::namedWindow("distance map");
-//    //test boost
-//    std::cout << "debug\n" << endl;
-//    std::vector<boost::tuple<double, double, double, double> > pts_A;
-//    pts_A.push_back(boost::make_tuple(
-//                                      1,
-//                                      0,
-//                                      1,
-//                                      1
-//                                      ));
+    //test boost
+    std::cout << "debug\n" << endl;
+    std::vector<boost::tuple<double, double, double, double> > pts_A;
+    pts_A.push_back(boost::make_tuple(
+                                      1,
+                                      0,
+                                      1,
+                                      1
+                                      ));
 
   for (size_t j=0; j<pointPositions.size(); j++){
     const Eigen::Vector2i& point=pointPositions[j];
