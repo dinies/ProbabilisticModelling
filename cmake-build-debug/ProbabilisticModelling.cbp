@@ -95,10 +95,10 @@
 		<Unit filename="/Users/dinies33/GitRepos/ProbabilisticModelling/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/dinies33/GitRepos/ProbabilisticModelling/../../../../usr/local/share/eigen3/cmake/Eigen3ConfigVersion.cmake">
+		<Unit filename="/Users/dinies33/GitRepos/ProbabilisticModelling/../../../../usr/local/share/eigen3/cmake/Eigen3Config.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\eigen3\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/dinies33/GitRepos/ProbabilisticModelling/../../../../usr/local/share/eigen3/cmake/Eigen3Config.cmake">
+		<Unit filename="/Users/dinies33/GitRepos/ProbabilisticModelling/../../../../usr/local/share/eigen3/cmake/Eigen3ConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\eigen3\cmake\"/>
 		</Unit>
 		<Unit filename="/Users/dinies33/GitRepos/ProbabilisticModelling/../../../../usr/local/share/eigen3/cmake/Eigen3Targets.cmake">
@@ -110,10 +110,10 @@
 		<Unit filename="/Users/dinies33/GitRepos/ProbabilisticModelling/../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
-		<Unit filename="/Users/dinies33/GitRepos/ProbabilisticModelling/../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+		<Unit filename="/Users/dinies33/GitRepos/ProbabilisticModelling/../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
-		<Unit filename="/Users/dinies33/GitRepos/ProbabilisticModelling/../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+		<Unit filename="/Users/dinies33/GitRepos/ProbabilisticModelling/../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
 	</Project>
