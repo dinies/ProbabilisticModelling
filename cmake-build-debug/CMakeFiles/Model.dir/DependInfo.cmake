@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dinies/GitRepos/ProbabilisticModelling/main.cpp" "/home/dinies/GitRepos/ProbabilisticModelling/cmake-build-debug/CMakeFiles/Model.dir/main.cpp.o"
+  "/home/dinies/GitRepos/ProbabilisticModelling/src/main.cpp" "/home/dinies/GitRepos/ProbabilisticModelling/cmake-build-debug/CMakeFiles/Model.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

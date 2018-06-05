@@ -57,38 +57,38 @@ include CMakeFiles/Model.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Model.dir/flags.make
 
-CMakeFiles/Model.dir/main.cpp.o: CMakeFiles/Model.dir/flags.make
-CMakeFiles/Model.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dinies/GitRepos/ProbabilisticModelling/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Model.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Model.dir/main.cpp.o -c /home/dinies/GitRepos/ProbabilisticModelling/main.cpp
+CMakeFiles/Model.dir/src/main.cpp.o: CMakeFiles/Model.dir/flags.make
+CMakeFiles/Model.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dinies/GitRepos/ProbabilisticModelling/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Model.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Model.dir/src/main.cpp.o -c /home/dinies/GitRepos/ProbabilisticModelling/src/main.cpp
 
-CMakeFiles/Model.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Model.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinies/GitRepos/ProbabilisticModelling/main.cpp > CMakeFiles/Model.dir/main.cpp.i
+CMakeFiles/Model.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Model.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinies/GitRepos/ProbabilisticModelling/src/main.cpp > CMakeFiles/Model.dir/src/main.cpp.i
 
-CMakeFiles/Model.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Model.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinies/GitRepos/ProbabilisticModelling/main.cpp -o CMakeFiles/Model.dir/main.cpp.s
+CMakeFiles/Model.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Model.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinies/GitRepos/ProbabilisticModelling/src/main.cpp -o CMakeFiles/Model.dir/src/main.cpp.s
 
-CMakeFiles/Model.dir/main.cpp.o.requires:
+CMakeFiles/Model.dir/src/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/Model.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/Model.dir/src/main.cpp.o.requires
 
-CMakeFiles/Model.dir/main.cpp.o.provides: CMakeFiles/Model.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Model.dir/build.make CMakeFiles/Model.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/Model.dir/main.cpp.o.provides
+CMakeFiles/Model.dir/src/main.cpp.o.provides: CMakeFiles/Model.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Model.dir/build.make CMakeFiles/Model.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/Model.dir/src/main.cpp.o.provides
 
-CMakeFiles/Model.dir/main.cpp.o.provides.build: CMakeFiles/Model.dir/main.cpp.o
+CMakeFiles/Model.dir/src/main.cpp.o.provides.build: CMakeFiles/Model.dir/src/main.cpp.o
 
 
 # Object files for target Model
 Model_OBJECTS = \
-"CMakeFiles/Model.dir/main.cpp.o"
+"CMakeFiles/Model.dir/src/main.cpp.o"
 
 # External object files for target Model
 Model_EXTERNAL_OBJECTS =
 
-Model: CMakeFiles/Model.dir/main.cpp.o
+Model: CMakeFiles/Model.dir/src/main.cpp.o
 Model: CMakeFiles/Model.dir/build.make
 Model: /opt/ros/lunar/lib/x86_64-linux-gnu/libopencv_stitching3.so.3.3.1
 Model: /opt/ros/lunar/lib/x86_64-linux-gnu/libopencv_superres3.so.3.3.1
@@ -144,7 +144,7 @@ CMakeFiles/Model.dir/build: Model
 
 .PHONY : CMakeFiles/Model.dir/build
 
-CMakeFiles/Model.dir/requires: CMakeFiles/Model.dir/main.cpp.o.requires
+CMakeFiles/Model.dir/requires: CMakeFiles/Model.dir/src/main.cpp.o.requires
 
 .PHONY : CMakeFiles/Model.dir/requires
 

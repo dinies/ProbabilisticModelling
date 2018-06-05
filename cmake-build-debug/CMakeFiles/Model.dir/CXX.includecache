@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/dinies/GitRepos/ProbabilisticModelling/defs.hpp
+/home/dinies/GitRepos/ProbabilisticModelling/src/defs.hpp
 Eigen/Core
 -
 Eigen/Geometry
@@ -20,11 +20,11 @@ iostream
 unistd.h
 -
 opencv2/opencv.hpp
-/home/dinies/GitRepos/ProbabilisticModelling/opencv2/opencv.hpp
+/home/dinies/GitRepos/ProbabilisticModelling/src/opencv2/opencv.hpp
 
-/home/dinies/GitRepos/ProbabilisticModelling/main.cpp
+/home/dinies/GitRepos/ProbabilisticModelling/src/main.cpp
 defs.hpp
-/home/dinies/GitRepos/ProbabilisticModelling/defs.hpp
+/home/dinies/GitRepos/ProbabilisticModelling/src/defs.hpp
 boost/tuple/tuple.hpp
 -
 

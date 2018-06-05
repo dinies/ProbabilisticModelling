@@ -1,4 +1,4 @@
-#include "defs.hpp"
+#include "../src/defs.hpp"
 
 #include <boost/tuple/tuple.hpp>
 
@@ -17,8 +17,8 @@ int main(int argc, char** argv){
 
 //  std::cout << "debug\n";
 // std::cout << "PATH=" << getenv("PATH") << std::endl;
-  int rows=480;
-  int cols=640;
+  int rows=80;
+  int cols=80;
   int num_pos=500;
 
   Vector2iVector pointPositions(num_pos);
@@ -38,9 +38,9 @@ int main(int argc, char** argv){
     std::vector<boost::tuple<double, double, double, double> > pts_A;
     pts_A.push_back(boost::make_tuple(
                                       1,
-                                      0,
+                                      5,
                                       1,
-                                      1
+                                      9
                                       ));
 
   for (size_t j=0; j<pointPositions.size(); j++){

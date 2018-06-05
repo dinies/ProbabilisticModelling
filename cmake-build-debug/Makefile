@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named drawPendulum
+
+# Build rule for target.
+drawPendulum: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 drawPendulum
+.PHONY : drawPendulum
+
+# fast build rule for target.
+drawPendulum/fast:
+	$(MAKE) -f executables/CMakeFiles/drawPendulum.dir/build.make executables/CMakeFiles/drawPendulum.dir/build
+.PHONY : drawPendulum/fast
+
+#=============================================================================
 # Target rules for targets named Model
 
 # Build rule for target.
@@ -120,35 +133,8 @@ Model: cmake_check_build_system
 
 # fast build rule for target.
 Model/fast:
-	$(MAKE) -f CMakeFiles/Model.dir/build.make CMakeFiles/Model.dir/build
+	$(MAKE) -f executables/CMakeFiles/Model.dir/build.make executables/CMakeFiles/Model.dir/build
 .PHONY : Model/fast
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Model.dir/build.make CMakeFiles/Model.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Model.dir/build.make CMakeFiles/Model.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Model.dir/build.make CMakeFiles/Model.dir/main.cpp.s
-.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -158,10 +144,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... drawPendulum"
 	@echo "... Model"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 
