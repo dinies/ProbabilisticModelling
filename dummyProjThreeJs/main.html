@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Constellation</title>
+  </head>
+  <script type="text/javascript" src="./libs/MV.js"></script>
+  <script type="text/javascript" src="./libs/math.js"></script>
+  <script type="text/javascript" src="./libs/webgl-utils.js"></script>
+
+  <script src="https://cdn.plot.ly/plotly-latest.js" charset="utf-8"></script>
+
+  <script type="text/javascript" src="./ConstellationLib.js"></script>
+  <body>
+
+    <svg id="svg_anim" height="512" width="512">
+
+      <circle id="drone1" cx="150" cy="50" r="20" stroke="black" stroke-width="3" fill="red" />
+      <circle id="drone2" cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="green" />
+      <circle id="drone3" cx="50" cy="150" r="20" stroke="black" stroke-width="3" fill="blue" />
+      <circle id="drone4" cx="150" cy="150" r="20" stroke="black" stroke-width="3" fill="yellow" />
+      Sorry, your browser does not support inline SVG.
+    </svg> 
+    <div id="plot1">
+    <div id="plot2">
+    <div id="plot3">
+    <div id="plot4">
+      <script type="text/javascript" src="main.js"></script>
+      <canvas id="gl-canvas" width="512" height="512">
+        Oops ... your browser doesn't support the HTML5 canvas element
+      </canvas>
+  </body>
+</html>
+
+
+
