@@ -4,15 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/dinies33/GitRepos/ProbabilisticModelling/main.cpp" "/Users/dinies33/GitRepos/ProbabilisticModelling/cmake-build-debug/CMakeFiles/Model.dir/main.cpp.o"
+  "/home/dinies/GitRepos/ProbabilisticModelling/src/main.cpp" "/home/dinies/GitRepos/ProbabilisticModelling/cmake-build-debug/CMakeFiles/Model.dir/src/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "UNIX"
+  )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/local/include/eigen3"
-  "/usr/local/include"
-  "/usr/local/include/opencv"
+  "/usr/include/eigen3"
+  "/opt/ros/lunar/include/opencv-3.3.1-dev"
+  "/opt/ros/lunar/include/opencv-3.3.1-dev/opencv"
   )
 
 # Targets to which this target links.

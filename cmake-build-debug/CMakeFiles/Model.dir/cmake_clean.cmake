@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Model.dir/main.cpp.o"
+  "CMakeFiles/Model.dir/src/main.cpp.o"
   "Model.pdb"
   "Model"
 )

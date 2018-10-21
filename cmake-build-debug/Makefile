@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/dinies/lib/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /home/dinies/lib/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dinies33/GitRepos/ProbabilisticModelling
+CMAKE_SOURCE_DIR = /home/dinies/GitRepos/ProbabilisticModelling
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dinies33/GitRepos/ProbabilisticModelling/cmake-build-debug
+CMAKE_BINARY_DIR = /home/dinies/GitRepos/ProbabilisticModelling/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/dinies33/GitRepos/ProbabilisticModelling/cmake-build-d
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/dinies/lib/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/dinies/lib/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dinies33/GitRepos/ProbabilisticModelling/cmake-build-debug/CMakeFiles /Users/dinies33/GitRepos/ProbabilisticModelling/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinies/GitRepos/ProbabilisticModelling/cmake-build-debug/CMakeFiles /home/dinies/GitRepos/ProbabilisticModelling/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dinies33/GitRepos/ProbabilisticModelling/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dinies/GitRepos/ProbabilisticModelling/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named drawPendulum
+
+# Build rule for target.
+drawPendulum: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 drawPendulum
+.PHONY : drawPendulum
+
+# fast build rule for target.
+drawPendulum/fast:
+	$(MAKE) -f executables/CMakeFiles/drawPendulum.dir/build.make executables/CMakeFiles/drawPendulum.dir/build
+.PHONY : drawPendulum/fast
+
+#=============================================================================
 # Target rules for targets named Model
 
 # Build rule for target.
@@ -120,35 +133,8 @@ Model: cmake_check_build_system
 
 # fast build rule for target.
 Model/fast:
-	$(MAKE) -f CMakeFiles/Model.dir/build.make CMakeFiles/Model.dir/build
+	$(MAKE) -f executables/CMakeFiles/Model.dir/build.make executables/CMakeFiles/Model.dir/build
 .PHONY : Model/fast
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Model.dir/build.make CMakeFiles/Model.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Model.dir/build.make CMakeFiles/Model.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Model.dir/build.make CMakeFiles/Model.dir/main.cpp.s
-.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -158,10 +144,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... drawPendulum"
 	@echo "... Model"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 
